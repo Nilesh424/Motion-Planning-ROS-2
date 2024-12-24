@@ -1,0 +1,9 @@
+colcon build --packages-select follow_the_gap
+
+source /opt/ros/humble/setup.bash
+source ~/sim_ws/install/setup.bash
+
+finally 
+
+
+ros2 launch follow_the_gap follow_the_gap_launch.py

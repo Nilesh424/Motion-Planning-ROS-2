@@ -1,0 +1,13 @@
+colcon build --packages-select pure_pursuit_controller
+
+Default Controller with A* Planner:
+ros2 launch pure_pursuit_controller pure_pursuit_controller_launch.py
+
+
+Controller with Delay and Dijkstra Planner:
+ros2 launch pure_pursuit_controller pure_pursuit_controller_launch.py controller_type:=with_delay path_planner:=dijkstra
+
+
+Controller with Lingering Lookahead Point and RRT Planner:
+ros2 launch pure_pursuit_controller pure_pursuit_controller_launch.py controller_type:=lingering path_planner:=RRT
+
