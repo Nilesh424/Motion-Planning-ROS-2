@@ -1,0 +1,8 @@
+colcon build --packages-select improved_artificial_potential_field_algorithm
+source install/setup.bash
+ros2 run improved_artificial_potential_field_algorithm improved_apf_node
+
+
+cause I have launch file 
+->
+ros2 launch improved_artificial_potential_field_algorithm improved_apf_launch.py
